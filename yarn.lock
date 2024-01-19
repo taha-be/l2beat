@@ -2049,20 +2049,20 @@
     dotenv "^16.3.1"
     error-stack-parser "^2.1.4"
 
-"@l2beat/discovery-types@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@l2beat/discovery-types/-/discovery-types-0.7.0.tgz#e6d90cd4fcb68d36d0f296eb82975c0344f1576f"
-  integrity sha512-GP2fM2NOZQzZPvm8PlYyBFVyrx8fZK8P3CVfGy4TkuXFlE4342e2ZQ3cZ507MHZkGrWE3zYOqR2MfFpH1beSMg==
+"@l2beat/discovery-types@0.8.0", "@l2beat/discovery-types@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@l2beat/discovery-types/-/discovery-types-0.8.0.tgz#b91c860b89f1fdbeb50c10f5c6b90fe7b0be2de8"
+  integrity sha512-EqzoADhi5/Q8ZX/j6O9qdWBr/bGaA5eUIFJlbYLGpcYmFx/wY/l4q0HjIixx3s9T3uRFUOIatewwZXbe7qKH9w==
   dependencies:
     zod "^3.22.2"
 
-"@l2beat/discovery@0.28.3":
-  version "0.28.3"
-  resolved "https://registry.yarnpkg.com/@l2beat/discovery/-/discovery-0.28.3.tgz#0729679d4853e524476e1d536ff8222549504c6a"
-  integrity sha512-VfHQsODaLsWkEudjf0GFif+Xduf3mu52BMI6R0QjM8f1JjUuRPJqBwHAOke3xOpqhitQ4cDQZ0C5S8zJiPFERg==
+"@l2beat/discovery@0.34.0":
+  version "0.34.0"
+  resolved "https://registry.yarnpkg.com/@l2beat/discovery/-/discovery-0.34.0.tgz#658f7409727372bde2f70c8c55c402fa40155b68"
+  integrity sha512-2lUCkTVl0ATJkUr0XZvRwcFOplwTEL/K59t1TlL1TCN6+9jVN2pm5SyX8m0YtYEMOEHAj/U/x9nMoviHYb2ziQ==
   dependencies:
     "@l2beat/backend-tools" "^0.5.1"
-    "@l2beat/discovery-types" "^0.7.0"
+    "@l2beat/discovery-types" "^0.8.0"
     chalk "^4.1.2"
     deep-diff "^1.0.2"
     dotenv "^16.0.3"
@@ -12401,6 +12401,48 @@ tsutils@^3.21.0:
   integrity sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==
   dependencies:
     tslib "^1.8.1"
+
+turbo-darwin-64@1.11.3:
+  version "1.11.3"
+  resolved "https://registry.yarnpkg.com/turbo-darwin-64/-/turbo-darwin-64-1.11.3.tgz#fb51f6fa030ee7a169d383b5f4f7641df6a3bdb8"
+  integrity sha512-IsOOg2bVbIt3o/X8Ew9fbQp5t1hTHN3fGNQYrPQwMR2W1kIAC6RfbVD4A9OeibPGyEPUpwOH79hZ9ydFH5kifw==
+
+turbo-darwin-arm64@1.11.3:
+  version "1.11.3"
+  resolved "https://registry.yarnpkg.com/turbo-darwin-arm64/-/turbo-darwin-arm64-1.11.3.tgz#f936cc7ba5565bd9be1ddc8ef4f15284044a63a5"
+  integrity sha512-FsJL7k0SaPbJzI/KCnrf/fi3PgCDCjTliMc/kEFkuWVA6Httc3Q4lxyLIIinz69q6JTx8wzh6yznUMzJRI3+dg==
+
+turbo-linux-64@1.11.3:
+  version "1.11.3"
+  resolved "https://registry.yarnpkg.com/turbo-linux-64/-/turbo-linux-64-1.11.3.tgz#86f56a91c05eea512a187079f7f7f860d8168be6"
+  integrity sha512-SvW7pvTVRGsqtSkII5w+wriZXvxqkluw5FO/MNAdFw0qmoov+PZ237+37/NgArqE3zVn1GX9P6nUx9VO+xcQAg==
+
+turbo-linux-arm64@1.11.3:
+  version "1.11.3"
+  resolved "https://registry.yarnpkg.com/turbo-linux-arm64/-/turbo-linux-arm64-1.11.3.tgz#0001dab6ded89154e2a5be21e87720daba953056"
+  integrity sha512-YhUfBi1deB3m+3M55X458J6B7RsIS7UtM3P1z13cUIhF+pOt65BgnaSnkHLwETidmhRh8Dl3GelaQGrB3RdCDw==
+
+turbo-windows-64@1.11.3:
+  version "1.11.3"
+  resolved "https://registry.yarnpkg.com/turbo-windows-64/-/turbo-windows-64-1.11.3.tgz#8d03c4fd8a46b81f2aecf60fc9845674c84d15a8"
+  integrity sha512-s+vEnuM2TiZuAUUUpmBHDr6vnNbJgj+5JYfnYmVklYs16kXh+EppafYQOAkcRIMAh7GjV3pLq5/uGqc7seZeHA==
+
+turbo-windows-arm64@1.11.3:
+  version "1.11.3"
+  resolved "https://registry.yarnpkg.com/turbo-windows-arm64/-/turbo-windows-arm64-1.11.3.tgz#cc436d1462f5450e97f985ba6d8d447272bb97db"
+  integrity sha512-ZR5z5Zpc7cASwfdRAV5yNScCZBsgGSbcwiA/u3farCacbPiXsfoWUkz28iyrx21/TRW0bi6dbsB2v17swa8bjw==
+
+turbo@^1.11.3:
+  version "1.11.3"
+  resolved "https://registry.yarnpkg.com/turbo/-/turbo-1.11.3.tgz#3bd823043585e1acfe125727bcecd4f91ef2103b"
+  integrity sha512-RCJOUFcFMQNIGKSjC9YmA5yVP1qtDiBA0Lv9VIgrXraI5Da1liVvl3VJPsoDNIR9eFMyA/aagx1iyj6UWem5hA==
+  optionalDependencies:
+    turbo-darwin-64 "1.11.3"
+    turbo-darwin-arm64 "1.11.3"
+    turbo-linux-64 "1.11.3"
+    turbo-linux-arm64 "1.11.3"
+    turbo-windows-64 "1.11.3"
+    turbo-windows-arm64 "1.11.3"
 
 twitter-api-v2@^1.14.0:
   version "1.14.0"
