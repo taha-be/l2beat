@@ -25,6 +25,7 @@ export interface Config {
   readonly updateMonitor: UpdateMonitorConfig | false
   readonly diffHistory: DiffHistoryConfig | false
   readonly statusEnabled: boolean
+  readonly chains: { name: string; chainId: ChainId }[]
 }
 
 export type LoggerConfig = Pick<LoggerOptions, 'logLevel' | 'format'> &
@@ -90,7 +91,7 @@ export interface EtherscanChainConfig {
 }
 
 export interface ChainTvlConfig {
-  readonly devId: string
+  readonly chain: string
   readonly config?: {
     readonly projectId: ProjectId
     readonly chainId: ChainId
