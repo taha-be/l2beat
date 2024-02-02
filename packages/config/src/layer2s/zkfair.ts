@@ -116,6 +116,28 @@ export const zkfair: Layer2 = {
         tokens: '*',
       }),
     ],
+    associatedTokens: ['ZKF'],
+  },
+  chainConfig: {
+    name: 'zkfair',
+    chainId: 42766,
+    explorerUrl: 'https://scan.zkfair.io/',
+    explorerApi: {
+      url: 'https://scan.zkfair.io/api/',
+      type: 'blockscout',
+    },
+    // ~ Timestamp of block number 0 on zkFair
+    // https://scan.zkfair.io/block/0
+    minTimestampForTvl: UnixTime.fromDate(new Date('2023-12-19T20:00:00Z')),
+    multicallContracts: [
+      {
+        sinceBlock: 6330383,
+        batchSize: 150,
+        address: EthereumAddress('0xcA11bde05977b3631167028862bE2a173976CA11'),
+        version: '3',
+      },
+    ],
+    coingeckoPlatform: 'zkfair',
   },
   riskView: makeBridgeCompatible({
     stateValidation: {
@@ -130,7 +152,7 @@ export const zkfair: Layer2 = {
       ],
     },
     dataAvailability: {
-      ...RISK_VIEW.DATA_EXTERNAL_DAC,
+      ...RISK_VIEW.DATA_EXTERNAL_DAC(),
       sources: [
         {
           contract: 'CDKValidium',

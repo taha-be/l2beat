@@ -91,11 +91,12 @@ export const mantapacific: Layer2 = {
     ],
     transactionApi: {
       type: 'rpc',
+      defaultUrl: 'https://pacific-rpc.manta.network/http',
+      defaultCallsPerMinute: 1500,
       startBlock: 1,
-      url: 'https://pacific-rpc.manta.network/http',
-      callsPerMinute: 1500,
       assessCount: subtractOne,
     },
+    associatedTokens: ['MANTA'],
   },
   chainConfig: {
     name: 'mantapacific',
@@ -103,7 +104,7 @@ export const mantapacific: Layer2 = {
     explorerUrl: 'https://pacific-explorer.manta.network',
     explorerApi: {
       url: 'https://pacific-explorer.manta.network/api',
-      type: 'routescan',
+      type: 'blockscout',
     },
     // ~ Timestamp of block number 0 on MantaPacific
     // https://pacific-explorer.manta.network/block/0

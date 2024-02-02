@@ -1,8 +1,8 @@
 {
   "name": "pNetwork",
   "chain": "ethereum",
-  "blockNumber": 19040706,
-  "configHash": "0x4e4a87b92031f61f62add3dd35c576e17eb0c4b6caf94dc6f4a668df27728398",
+  "blockNumber": 19118450,
+  "configHash": "0xc12f151d384d4d14f3487d41f29326cbae9c990c180b055c38a6e6c17942d9b9",
   "version": 3,
   "contracts": [
     {
@@ -18,7 +18,7 @@
       "derivedName": "Erc20Vault"
     },
     {
-      "name": "DandelionVoting",
+      "name": "pNetworkDAOVoting",
       "address": "0x2211bFD97b1c02aE8Ac305d206e9780ba7D8BfF4",
       "upgradeability": {
         "type": "EIP897 proxy",
@@ -55,8 +55,9 @@
         "proxyType": 2,
         "supportRequiredPct": "510000000000000000",
         "token": "0xe824F81cD136BB7a28480baF8d7E5f0E8E4B693E",
-        "votesLength": 34
-      }
+        "votesLength": 35
+      },
+      "derivedName": "DandelionVoting"
     },
     {
       "name": "Kernel",
@@ -289,7 +290,7 @@
         "parentToken": "0x0000000000000000000000000000000000000000",
         "symbol": "daoPNT",
         "tokenFactory": "0xA29EF584c389c67178aE9152aC9C543f9156E2B3",
-        "totalSupply": "8454910804266401825573160",
+        "totalSupply": "8442070804266401825573160",
         "transfersEnabled": false,
         "version": "MMT_0.1"
       },

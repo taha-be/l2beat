@@ -1,7 +1,80 @@
+Generated with discovered.json: 0x8719a11829c6e6325ba2ef228b77a827c2cacf3a
+
+# Diff at Fri, 02 Feb 2024 11:08:25 GMT:
+
+- author: Luca Donno (<donnoh99@gmail.com>)
+- comparing to: main@d4d9bc19cc4a1e4baaadb947f4ad7e44e6c21ac9 block: 19119504
+- current block number: 19140307
+
+## Description
+
+The nonce is now ignored. Start tracking the keySetUpdates.
+
+## Config/verification related changes
+
+Following changes come from updates made to the config file,
+or/and contracts becoming verified, not from differences found during
+discovery. Values are for block 19119504 (main branch discovery), not current.
+
+```diff
+    contract SequencerInbox (0x1c479675ad559DC151F6Ec7ed3FbF8ceE79582B6) {
+      values.keySetUpdates:
++        0
+    }
+```
+
+```diff
+    contract GnosisSafe (0xC234E41AE2cb00311956Aa7109fC801ae8c80941) {
+      name:
+-        "GnosisSafe"
++        "ValidatorOwnerMultisig"
+      derivedName:
++        "GnosisSafe"
+    }
+```
+
+Generated with discovered.json: 0x64a4811e26385036e4496726627304e6f3ddd353
+
+# Diff at Tue, 30 Jan 2024 13:04:34 GMT:
+
+- author: Mateusz Radomski (<radomski.main@protonmail.com>)
+- comparing to: main@ceb6abb9c987b0d53dd547a79c3ebbf3480a024b block: 19069754
+- current block number: 19119504
+
+## Description
+
+Add the SequencerInboxVersion handler.
+ArbOS11 Upgrade.
+
+## Watched changes
+
+```diff
+    contract RollupProxy (0x5eF0D09d1E6204141B4d37530808eD19f60FBa35) {
+      values.wasmModuleRoot:
+-        "0x6b94a7fc388fd8ef3def759297828dc311761e88d8179c7ee8d3887dc554f3c3"
++        "0xf4389b835497a910d7ba3ebfb77aa93da985634f3c052de1290360635be40c4a"
+    }
+```
+
+## Config/verification related changes
+
+Following changes come from updates made to the config file,
+or/and contracts becoming verified, not from differences found during
+discovery. Values are for block 19069754 (main branch discovery), not current.
+
+```diff
+    contract SequencerInbox (0x1c479675ad559DC151F6Ec7ed3FbF8ceE79582B6) {
+      values.sequencerVersion:
++        "0x00"
+    }
+```
+
+Generated with discovered.json: 0xe996eeb6cd08d695db9b13369e8aded556ec9bb2
+
 # Diff at Tue, 23 Jan 2024 13:46:20 GMT:
 
 - author: Luca Donno (<donnoh99@gmail.com>)
-- comparing to: master@74040c3a8f43c630b3d31cc8376e84f5f9acda5c block: 18691623
+- comparing to: main@74040c3a8f43c630b3d31cc8376e84f5f9acda5c block: 18691623
 - current block number: 19069754
 
 ## Description
@@ -135,7 +208,7 @@ discovery. Values are for block 18691623 (main branch discovery), not current.
 # Diff at Fri, 24 Nov 2023 10:04:53 GMT:
 
 - author: Radina Talanova (<nt.radina@gmail.com>)
-- comparing to: master@34d3533152f3f3d3d80344ca84d4d9a3744c3f17
+- comparing to: main@34d3533152f3f3d3d80344ca84d4d9a3744c3f17
 
 ## Description
 
@@ -153,7 +226,7 @@ New scheduled transaction - there is a DAC update about to be executed by the Up
 # Diff at Mon, 13 Nov 2023 15:23:11 GMT:
 
 - author: Adrian Adamiak (<adrian@adamiak.net>)
-- comparing to: master@a45348c9ae2e765b872be3f217168f73b62d35a6
+- comparing to: main@a45348c9ae2e765b872be3f217168f73b62d35a6
 
 ## Description
 
@@ -219,7 +292,7 @@ Added EOAs:
 # Diff at Tue, 26 Sep 2023 07:54:37 GMT:
 
 - author: Luca Donno (<donnoh99@gmail.com>)
-- comparing to: master@cfd4e281f2af40c7c69302b16c1308c0c5651be0
+- comparing to: main@cfd4e281f2af40c7c69302b16c1308c0c5651be0
 
 ## Watched changes
 
@@ -240,7 +313,7 @@ Added EOAs:
 # Diff at Fri, 22 Sep 2023 09:02:08 GMT:
 
 - author: Luca Donno (<donnoh99@gmail.com>)
-- comparing to: master@3a33c063dab8666dc32b4ec15a81995020325b49
+- comparing to: main@3a33c063dab8666dc32b4ec15a81995020325b49
 
 ## Watched changes
 
@@ -254,7 +327,7 @@ Added EOAs:
 # Diff at Thu, 21 Sep 2023 14:53:24 GMT:
 
 - author: Luca Donno (<donnoh99@gmail.com>)
-- comparing to: master@7579713bbe334d225f845fec749fd69636fe060a
+- comparing to: main@7579713bbe334d225f845fec749fd69636fe060a
 
 ## Watched changes
 
